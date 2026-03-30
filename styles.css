@@ -1,0 +1,40 @@
+h1 {
+    color: #1F5C3A;
+}
+
+.redondo {
+    border-radius: 5px;
+}
+
+#pass {
+    background-color: aqua;
+}
+
+button {
+    background-color: #1F5C3A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+/* Pantalla de celular */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+    
+}
