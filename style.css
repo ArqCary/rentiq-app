@@ -1,0 +1,24 @@
+h1{
+    color: #1f5c3a;
+}
+
+.redondo {
+    border-radius: 5px;
+}
+
+#pass {
+    background-color: aquamarine;
+}
+
+button {
+    background-color: #1f5c3a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* se guarda con control+s */
+/* para escribir comentarios como estos, se pulsa control+] */
+
+/* pantalla de celular */
+
