@@ -4,34 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rentiq - Inicio de sesión</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header><h1>Rentiq</h1></header>
     <main>
       <form action="">
-        <section>
+        <section class="header-login">
           <h2>Bienvenido de nuevo</h2>
           <p>Ingresa tus credenciales para gestionar tus propiedades.</p>
         </section>
-        <section>
-            <fieldset>
-                <label for="email">CORREO ELECTRÓNICO</label>
-                <input class="redondo" type="email" id="email">
-            </fieldset>
-            <fieldset>
-                <label for="pass">CONTRASEÑA</label>
-                <input type="password" id="pass">
-                <a href="">¿Olvidaste tu contraseña?</a>
-            </fieldset>
+        <section class="main-login">
+          <fieldset class="fieldset-group">
+            <label for="email">CORREO ELECTRÓNICO</label>
+            <input
+              class="redondo"
+              type="email"
+              id="email"
+              placeholder="ejemplo@rentiq.com"
+            />
+          </fieldset>
+          <fieldset class="fieldset-group">
+            <label for="pass">
+              CONTRASEÑA <a href="">¿Olvidaste tu contraseña?</a>
+            </label>
+            <input
+              class="redondo"
+              type="password"
+              id="pass"
+              placeholder="••••••••"
+            />
+          </fieldset>
         </section>
+        <button>Ingresar</button>
         <footer>
-            <button>Ingresar</button>
+          <p>¿No tienes una cuenta? <a href="">Regístrate ahora</a></p>
         </footer>
       </form>
     </main>
-    <footer>
-        <h3>Rentiq © 2026</h3>
+    <footer class="footer">
+      <section>
+        <h3>Rentiq</h3>
+        <p>Curaduría digital para una gestión inmobiliaria sofisticada.</p>
+      </section>
+      <section>
+        <h4>Legal</h4>
+        <ul>
+          <li>Privacy Pilicy</li>
+          <li>Terms of Service</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Soporte</h4>
+        <ul>
+          <li>Contact Support</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Plataforma</h4>
+        <ul>
+          <li>List of Property</li>
+        </ul>
+      </section>
+      <section>
+        <p>&copy 2026 Rentiq Digital Curator. All rights reserved.</p>
+      </section>
     </footer>
   </body>
 </html>

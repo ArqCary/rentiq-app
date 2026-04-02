@@ -1,40 +1,161 @@
-h1 {
-    color: #1F5C3A;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 243, 242);
+  font-weight: 350;
+}
+
+:is(h1, h2, h3, h4, h5, h6, label) {
+  font-family: "Manrope", "Inter", sans-serif;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: #1f5c3a;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+form {
+  width: 400px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.header-login {
+  margin-bottom: 40px;
+}
+
+.header-login h2 {
+  color: #1f5c3a;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.fieldset-group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .redondo {
-    border-radius: 5px;
+  padding: 15px;
+  background-color: rgb(243, 243, 242);
+  border: none;
+  border-radius: 10px;
 }
 
-#pass {
-    background-color: aqua;
+input::placeholder {
+  font-size: 14px;
+  color: rgb(104, 104, 104);
+}
+
+input:focus {
+  outline-style: none;
+  color: rgb(104, 104, 104);
+}
+
+.fieldset-group:nth-of-type(2) label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label a {
+  font-size: 13px;
+  letter-spacing: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #1f5c3a;
+  font-weight: 600;
 }
 
 button {
-    background-color: #1F5C3A;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #1f5c3a;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
-button:hover {
-    background-color: blueviolet;
+form footer {
+  border-top: 1px solid rgb(243, 243, 242);
+  padding-top: 30px;
+  text-align: center;
 }
 
-/* Pantalla de celular */
-@media screen and (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: white;
+  width: 100%;
+  padding: 40px;
+}
 
-    h1 {
-        font-size: 24px;
-    }
+.footer section:first-child p {
+  color: rgb(104, 104, 104);
+}
 
-    button {
-        width: 100%;
-        padding: 15px;
-    }
-    
+.footer section:first-child h3 {
+  color: #1f5c3a;
+}
+
+.footer section:not(:last-child) {
+  flex: 1;
+}
+
+.footer section:last-child {
+  color: rgb(104, 104, 104);
+  flex-basis: 100%;
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid rgb(243, 243, 242);
+}
+
+.footer h3, h4 {
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer li {
+  list-style: none;
+  color: rgb(104, 104, 104);
 }
