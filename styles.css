@@ -23,6 +23,7 @@ header {
   text-align: center;
   padding: 20px;
   color: #1f5c3a;
+  margin-bottom: 50px;
 }
 
 main {
@@ -35,7 +36,7 @@ main {
 }
 
 form {
-  width: 400px;
+  width: 430px;
   padding: 40px;
   background-color: white;
   border-radius: 15px;
@@ -91,6 +92,8 @@ label a {
 }
 
 a {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   color: #1f5c3a;
   font-weight: 600;
@@ -123,6 +126,7 @@ form footer {
   background-color: white;
   width: 100%;
   padding: 40px;
+  margin-top: 50px;
 }
 
 .footer section:first-child p {
@@ -145,7 +149,8 @@ form footer {
   border-top: 1px solid rgb(243, 243, 242);
 }
 
-.footer h3, h4 {
+.footer h3,
+h4 {
   margin-bottom: 20px;
 }
 
@@ -158,4 +163,31 @@ form footer {
 .footer li {
   list-style: none;
   color: rgb(104, 104, 104);
+}
+
+.lock {
+  background-color: #beeed2;
+  color: #1f5c3a;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.toast {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #E4FCEC;
+  color: #1f5c3a;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.check {
+  color: white;
+  background-color: #1f5c3a;
+  border-radius: 50%;
 }
