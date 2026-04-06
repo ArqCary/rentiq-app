@@ -1,10 +1,16 @@
 <!doctype html>
-<html lang="e">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rentiq-Inicio de sesión</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rentiq - Soluciones de Alquiler</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -12,26 +18,53 @@
     </header>
     <main>
       <form action="">
-        <section>
-          <h2>Bienvenido de nuevo</h2>
-          <p>Ingresa tus credenciales para gestionar tus propiedades</p>
+        <section class="form-header">
+          <h2>Crea tu cuenta</h2>
+          <p>Únete a la comunidad de gestión inmobiliaria inteligente</p>
         </section>
-        <section>
+        <section class="form-main">
+          <fieldset>
+            <label for="name">NOMBRE COMPLETO</label>
+            <input
+              class="redondo"
+              type="text"
+              id="name"
+              placeholder="Tu nombre"
+            />
+          </fieldset>
           <fieldset>
             <label for="email">CORREO ELECTRONICO</label>
-            <input class="redondo" type="email" id="email" />
+            <input
+              class="redondo"
+              type="email"
+              id="email"
+              placeholder="correo@rentiq.com"
+            />
           </fieldset>
           <fieldset>
             <label for="pass">CONTRASEÑA</label>
-            <input type="password" id="pass" />
-            <a href="">¿Olvidaste tu contraseña?</a>
+            <input
+              class="redondo"
+              type="password"
+              id="pass"
+              placeholder="● ● ● ● ● ● ● ●"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="confirm-pass">CONFIRMAR CONTRASEÑA</label>
+            <input
+              class="redondo"
+              type="password"
+              id="confirm-pass"
+              placeholder="● ● ● ● ● ● ● ●"
+            />
           </fieldset>
         </section>
+        <button>Registrarse</button>
         <footer>
-            <button>Ingresar</button>
+          <p>¿Ya tienes cuenta? <a href="">Inicia sesión</a></p>
         </footer>
       </form>
     </main>
-    <footer></footer>
   </body>
 </html>

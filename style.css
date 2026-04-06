@@ -1,24 +1,113 @@
-h1{
-    color: #1f5c3a;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-.redondo {
-    border-radius: 5px;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 243, 242);
+  height: 100vh;
 }
 
-#pass {
-    background-color: aquamarine;
+:is(h2, h3, h4, p, label) {
+  font-family: "Manrope", "Inter", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+}
+h1 {
+  text-align: center;
+  color: #1f5c3a;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 35px;
+  width: 450px;
+}
+
+.form-header {
+  margin-bottom: 35px;
+}
+
+section p,
+h2 {
+  font-family: "Manrope", sans-serif;
+}
+h2 {
+  color: #3d8b5e;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+fieldset label {
+  font-size: 13.5px;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+fieldset input {
+  background-color: rgb(243, 243, 242);
+  border: none;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+input:focus {
+  outline-style: none;
 }
 
 button {
-    background-color: #1f5c3a;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+  width: 100%;
+  background-color: #1f5c3a;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
 }
+
+footer {
+  border-top: 1px solid rgb(243, 243, 242);
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #1f5c3a;
+  font-weight: 600;
+}
+
 /* se guarda con control+s */
 /* para escribir comentarios como estos, se pulsa control+] */
 
 /* pantalla de celular */
-
