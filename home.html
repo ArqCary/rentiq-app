@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rentiq - Soluciones de Alquiler</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="assets/img/Captura de pantalla 2026-04-16 151213.png"
+        alt="logo de Rentiq"
+        width="120px"
+      />
+      <nav class="">
+        <ul class="first-nav">
+          <li><a class="active" href="#">Properties</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Insights</a></li>
+        </ul>
+      </nav>
+      <section>
+        <button class="Login-bottom">Login</button>
+        <button class="Register-bottom">Register</button>
+      </section>
+    </header>
+    <main>
+      <div class="cover-container">
+        <h1>Encuentra tu próximo hogar</h1>
+        <form class="search-form" action="">
+          <section class="form-main-1">
+            <fieldset>
+              <label for="ciudad">UBICACIÓN</label>
+              <input
+                class="redondo"
+                type="text"
+                list="ciudades"
+                id="ciudad"
+                name="ciudad"
+                placeholder="¿A dónde quieres mudarte?"
+              />
+              <datalist id="ciudades">
+                <option value="Bogotá"></option>
+                <option value="Medellín"></option>
+                <option value="Cali"></option>
+                <option value="Barranquilla"></option>
+                <option value="Cartagena"></option>
+                <option value="Cúcuta"></option>
+                <option value="Bucaramanga"></option>
+                <option value="Pereira"></option>
+                <option value="Santa Marta"></option>
+                <option value="Ibagué"></option>
+              </datalist>
+            </fieldset>
+          </section>
+          <section class="form-main-2">
+            <fieldset>
+              <label for="tipo_inmueble">TIPO DE INMUEBLE</label>
+              <input
+                class="redondo"
+                type="text"
+                list="tipos"
+                id="tipo_inmueble"
+                name="tipo_inmueble"
+                placeholder="Apartamento"
+              />
+              <datalist id="tipos">
+                <option value="Apartamento"></option>
+                <option value="Casa"></option>
+                <option value="Local"></option>
+                <option value="Apartaestudio"></option>
+                <option value="Bodega"></option>
+                <option value="Casalocal"></option>
+                <option value="Finca"></option>
+                <option value="Oficina"></option>
+              </datalist>
+            </fieldset>
+            <fieldset>
+              <label for="precio">PRECIO MAXIMO</label>
+              <input
+                class="redondo"
+                type="text"
+                list="precios"
+                id="precio"
+                name="precio"
+                placeholder="$500K-1M"
+              />
+              <datalist id="precios">
+                <option value="$500K-1M"></option>
+                <option value="$1M-1.5M"></option>
+                <option value="$1.5M-2M"></option>
+                <option value="$2M-2.5M"></option>
+                <option value="$2.5M-3M"></option>
+                <option value="$3M-3.5M"></option>
+                <option value="$3.5M-4M"></option>
+                <option value="$4M-4.5M"></option>
+              </datalist>
+            </fieldset>
+            <button class="search-bottom" aria-label="Buscar">
+              <span class="material-symbols-outlined iconos"> search </span>
+            </button>
+          </section>
+        </form>
+      </div>
+      <section class="explorer">
+        <aside class="sidebar-filters">
+          <section>
+            <h3>Filtros Avanzados</h3>
+            <h5>CALIFICACIÓN MÍNIMA</h5>
+          </section>
+          <section>
+            <div class="calificacion-minima">
+              <span class="material-symbols-outlined"> circle </span>
+              <h5>4.5+</h5>
+              <span class="material-symbols-outlined"> kid_star </span>
+              <h5>(Excelente)</h5>
+            </div>
+            <div class="calificacion-minima">
+              <span class="material-symbols-outlined"> circle </span>
+              <h5>4.0+</h5>
+              <span class="material-symbols-outlined"> kid_star </span>
+            </div>
+            <div class="calificacion-minima">
+              <span class="material-symbols-outlined"> circle </span>
+              <h5>3.5+</h5>
+              <span class="material-symbols-outlined"> kid_star </span>
+            </div>
+          </section>
+          <section class="container-comodidades">
+            <h5>COMODIDADES</h5>
+            <div class="comodidades">
+              <h3>Mascotas</h3>
+              <span class="material-symbols-outlined"> pets </span>
+            </div>
+            <div class="comodidades">
+              <h3>Estacionamiento</h3>
+              <span class="material-symbols-outlined"> directions_car </span>
+            </div>
+            <div class="comodidades">
+              <h3>Seguridad 24/7</h3>
+              <span class="material-symbols-outlined"> health_and_safety </span>
+            </div>
+            <div>
+              <h3>¿Eres propietario?</h3>
+              <p>
+                Lista tu propiedad con nosotros y alcanza a miles de
+                arrendatarios calificados.
+              </p>
+              <button>Comenzar ahora</button>
+            </div>
+          </section>
+        </aside>
+        <section class="explora-inmuebles">
+          <div>
+            <h2>Explorar Inmuebles</h2>
+            <h3>Mostrando 24 de 156 resultados en tu área</h3>
+          </div>
+          <div class="container-available-apartments">
+            <section class="product-information">
+              <img
+                class="product-image"
+                src="/assets/img/apto-El-Tesoro.png"
+                alt="apartamento"
+              />
+              <div class="complete-product">
+                <section>
+                  <div class="product-n-location">
+                    <div class="product">
+                      <h3>Penthouse El Tesoro</h3>
+                      <section class="product-rating">
+                        <span class="material-symbols-outlined">
+                          kid_star
+                        </span>
+                        <h4>4.9</h4>
+                      </section>
+                    </div>
+                    <h5>El Poblado, Medellín</h5>
+                  </div>
+                </section>
+                <section class="apartment-features">
+                  <span class="material-symbols-outlined"> bed </span>
+                  <h5>3 Hab</h5>
+                  <span class="material-symbols-outlined"> shower </span>
+                  <h5>2 Baños</h5>
+                  <span class="material-symbols-outlined"> square_foot </span>
+                  <h5>120 m²</h5>
+                </section>
+                <section class="apartment-prices">
+                  <div>
+                    <h5>PRECIO MENSUAL</h5>
+                    <h3 class="price-apartment">$4.500.000</h3>
+                  </div>
+                  <button class="next-button" aria-label="next">
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
+                  </button>
+                </section>
+              </div>
+            </section>
+            <section class="product-information">
+              <img
+                class="product-image"
+                src="/assets/img/apto-El-Tesoro.png"
+                alt="apartamento"
+              />
+              <div class="complete-product">
+                <section>
+                  <div class="product-n-location">
+                    <div class="product">
+                      <h3>Penthouse El Tesoro</h3>
+                      <section class="product-rating">
+                        <span class="material-symbols-outlined">
+                          kid_star
+                        </span>
+                        <h4>4.9</h4>
+                      </section>
+                    </div>
+                    <h5>El Poblado, Medellín</h5>
+                  </div>
+                </section>
+                <section class="apartment-features">
+                  <span class="material-symbols-outlined"> bed </span>
+                  <h5>3 Hab</h5>
+                  <span class="material-symbols-outlined"> shower </span>
+                  <h5>2 Baños</h5>
+                  <span class="material-symbols-outlined"> square_foot </span>
+                  <h5>120 m²</h5>
+                </section>
+                <section class="apartment-prices">
+                  <div>
+                    <h5>PRECIO MENSUAL</h5>
+                    <h3 class="price-apartment">$4.500.000</h3>
+                  </div>
+                  <button class="next-button" aria-label="next">
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
+                  </button>
+                </section>
+              </div>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="home.js" defer></script>
+  </body>
+</html>

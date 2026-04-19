@@ -82,7 +82,7 @@ input:focus {
   outline-style: none;
 }
 
-button {
+/* button {
   width: 100%;
   background-color: #1f5c3a;
   color: white;
@@ -94,7 +94,7 @@ button {
   margin-top: 20px;
   margin-bottom: 40px;
   cursor: pointer;
-}
+} */
 
 footer {
   border-top: 1px solid rgb(243, 243, 242);
@@ -106,6 +106,9 @@ footer a {
   color: #1f5c3a;
   font-weight: 600;
 }
+
+
+
 
 /* se guarda con control+s */
 /* para escribir comentarios como estos, se pulsa control+] */

@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* body {
+  background-color: #fcf9f8;
+} */
+
+body {
+  background-color: #f3b09a;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.first-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.first-nav li {
+  list-style: none;
+  font-family: "Manrope", sans-serif;
+}
+
+.first-nav li a {
+  color: black;
+  text-decoration: none;
+}
+
+.first-nav li a.active {
+  color: #1f5c3a;
+  border-bottom: 2px solid #1f5c3a;
+}
+
+.Login-bottom {
+  background: none;
+  border: none;
+  font-family: "Manrope", sans-serif;
+}
+
+.Register-bottom {
+  background-color: #1f5c3a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  padding: 15px;
+  width: 110px;
+}
+
+.cover-container {
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 55%, #fcf9f8 100%),
+    url(assets/img/R.jpg);
+  height: 700px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 53px;
+  align-items: center;
+}
+
+.search-form {
+  background-color: white;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 80%;
+}
+
+.form-main-1 {
+  width: 70%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.form-main-1 fieldset {
+  width: 100%;
+}
+
+.form-main-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+fieldset label {
+  font-size: 13.5px;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+fieldset input {
+  background-color: rgb(243, 243, 242);
+  border: none;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+input:focus {
+  outline-style: none;
+}
+
+.search-bottom {
+  background-color: #1f5c3a;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1px;
+}
+
+.search-bottom span {
+  font-size: 20px;
+}
+
+
+.explorer {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.sidebar-filters {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 25%;
+  justify-content: space-between;
+  align-items: start;
+}
+
+
+.calificacion-minima {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.container-comodidades {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: start;
+gap: 10px;
+}
+
+.comodidades {
+  display: flex;
+  flex-direction: row;
+  background-color: #c8c6c5;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.explora-inmuebles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.container-available-apartments {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+
+
+.product-information {
+  background-color: white;
+  margin: 40px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  justify-content: space-between;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-n-location {
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.complete-product {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.product-rating {
+  background-color: #f68dcc;
+  color: #ea450e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.apartment-features {
+  color: #9fa6a2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  padding: 15px;
+}
+
+.apartment-prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.price-apartment {
+  color: #1f5c3a;
+  font-size: 25px;
+}
+
+.next-button {
+  background-color: rgb(200, 200, 200);
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* 
+.search-bottom {
+  background-color: #1f5c3a;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1px;
+}
+
+.search-form {
+  background-color: white;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 80%;
+}
+.serch-button svg {
+  display: flex;
+  align-items: center;
+  background-color: #1f5c3a;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.container-icons {
+  background-color: #1f5c3a;
+  color: white;
+}
+
+
+.form-main {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.name-product {
+  display: flex;
+  flex-direction: row;
+}
+.apartment-features {
+  display: flex;
+  flex-direction: row;
+  color: #bfc9bf;
+} */
+
+@media screen and (max-width: 900px) {
+  .search-form {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .form-main-2 {
+    flex-direction: column;
+    justify-content: start;
+  }
+}
