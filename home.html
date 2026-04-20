@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container">
+    <header class="header-container">
+      <h1 class="brand">
+        <span class="material-symbols-outlined logo" aria-hidden="true">
+          key </span
+        >Rentiq
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Properties</a></li>
+          <li><a href="#">Management</a></li>
+          <li><a href="#">Insights</a></li>
+        </ul>
+      </nav>
+      <section>
+        <a href="./logIn.html">Login</a>
+        <a href="./register.html">Register</a>
+      </section>
+    </header>
+    <section class="hero">
+      <h2>Encuentra tu próximo hogar</h2>
+      <form action="" class="form-search">
+        <fieldset>
+          <legend class="hidden">Buscador de propiedades</legend>
+          <div class="field-group-1">
+            <label for="location">Ubicación</label>
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="¿A dónde quieres mudarte?"
+            />
+          </div>
+          <div class="field-group-2">
+            <label for="type-apt">Tipo de inmueble</label>
+            <select name="type-apt" id="type-apt">
+              <option value="Apartamentos">Apartamentos</option>
+              <option value="Casas">Apartamentos</option>
+              <option value="Apartastudio">Apartastudio</option>
+            </select>
+            <label for="price-apt">Precio máximo</label>
+            <select name="price-apt" id="price-apt">
+              <option value="$500k - $1m">$500k - $1m</option>
+              <option value="$1m - $10m">$1m - $10m</option>
+              <option value=">$10m">>$10m</option>
+            </select>
+            <button type="submit">
+              <span class="material-symbols-outlined" aria-label="Buscar">
+                search
+              </span>
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <aside>
+      <h3>Filtros Avanzados</h3>
+      <section class="qualification">
+        <div class="qualification-group">
+          <input type="radio" name="high" id="high" />
+          <label for="high">
+            4.5+ <span class="material-symbols-outlined"> star </span>
+          </label>
+          <p>(Excelente)</p>
+        </div>
+        <div class="qualification-group">
+          <input type="radio" name="mid" id="mid" />
+          <label for="mid">
+            4.0+ <span class="material-symbols-outlined"> star </span>
+          </label>
+        </div>
+        <div class="qualification-group">
+          <input type="radio" name="low" id="low" />
+          <label for="low">
+            3.5+ <span class="material-symbols-outlined"> star </span>
+          </label>
+        </div>
+      </section>
+      <section class="amenities">
+        <div class="amenities-group">
+          <input type="checkbox" id="amenities" class="hidden-checkbox" />
+          <label for="amenities" class="amenities-button">
+            <p>Mascotas</p>
+            <span class="material-symbols-outlined"> pets </span>
+          </label>
+        </div>
+        <div class="amenities-group">
+          <input type="checkbox" id="amenities" class="hidden-checkbox" />
+          <label for="amenities" class="amenities-button">
+            <p>Espacionamiento</p>
+            <span class="material-symbols-outlined"> directions_car </span>
+          </label>
+        </div>
+        <div class="amenities-group">
+          <input type="checkbox" id="amenities" class="hidden-checkbox" />
+          <label for="amenities" class="amenities-button">
+            <p>Seguridad 24/7</p>
+            <span class="material-symbols-outlined"> verified_user </span>
+          </label>
+        </div>
+      </section>
+      <div class="add">
+        <h3>¿Eres propietario?</h3>
+        <p>
+          Lista tu propiedad con nosotros y alcanza a miles de arrendatarios
+          calificados.
+        </p>
+        <button class="button-add">Comenzar ahora</button>
+      </div>
+    </aside>
+    <main class="explore">
+      <header class="main-header">
+        <section>
+          <h2>Explora Inmuebles</h2>
+          <p>mostrando 24 de 156 resultados en tu área</p>
+        </section>
+        <div class="buttons-explore">
+          <button>
+            <span class="material-symbols-outlined"> grid_view </span>
+          </button>
+          <button>
+            <span class="material-symbols-outlined"> list </span>
+          </button>
+        </div>
+      </header>
+      <section class="cards">
+        <article class="card">
+          <header class="card-header">
+            <div>
+              <h5>Disponible</h5>
+              <span class="material-symbols-outlined"> favorite </span>
+            </div>
+            <img src="" alt="Foto del inmueble" />
+          </header>
+          <section class="card-name">
+            <h4>Penthouse El Tesoro</h4>
+            <div>
+              <span class="material-symbols-outlined"> location_on </span>
+              <p>El Poblado, Medellín</p>
+            </div>
+            <div class="card-qualification">
+              <span class="material-symbols-outlined"> star </span>
+              4.9
+            </div>
+          </section>
+          <section class="characteristics">
+            <div>
+              <span class="material-symbols-outlined"> bed </span>
+              <p>3 Hab</p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined"> shower </span>
+              <p>2 Baños</p>
+            </div>
+            <div>
+              <span class="material-symbols-outlined"> square_foot </span>
+              <p>120m²</p>
+            </div>
+          </section>
+          <section class="price">
+            <div>
+              <p>Precio Mensual</p>
+              <p>$4.500.000</p>
+            </div>
+            <button>
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </button>
+          </section>
+        </article>
+      </section>
+    </main>
+    <section></section>
+    <footer class="footer">
+      <section>
+        <h3>Rentiq</h3>
+        <p>Curaduría digital para una gestión inmobiliaria sofisticada.</p>
+      </section>
+      <section>
+        <h4>Legal</h4>
+        <ul>
+          <li>Privacy Pilicy</li>
+          <li>Terms of Service</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Soporte</h4>
+        <ul>
+          <li>Contact Support</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Plataforma</h4>
+        <ul>
+          <li>List of Property</li>
+        </ul>
+      </section>
+      <section>
+        <p>&copy 2026 Rentiq Digital Curator. All rights reserved.</p>
+      </section>
+    </footer>
+    <script src="./home.js"></script>
+  </body>
+</html>
